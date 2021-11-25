@@ -22,6 +22,7 @@ public class Kontroler {
 
         gielda = new Gielda();
         gielda.setNazwa("Gielda MK");
+        gielda.setAdres("Szczecin");
     }
 
     public void testujGielde(){
