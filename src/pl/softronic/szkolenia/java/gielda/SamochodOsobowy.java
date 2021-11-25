@@ -57,7 +57,7 @@ public class SamochodOsobowy extends Pojazd {
     @Override
     public String toString() {
         return "SamochodOsobowy{" +
-                "liczbaMiejsc=" + liczbaMiejsc +
+                "liczbaMiejsc=" + liczbaMiejsc + '\'' +
                 ", nadwozie='" + nadwozie + '\'' +
                 ", marka='" + super.getMarka() + '\'' +
                 ", pojemnosc=" + pojemnosc +

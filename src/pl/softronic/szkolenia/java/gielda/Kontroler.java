@@ -10,6 +10,7 @@ public class Kontroler {
     UrzadSkarbowy us;
     Pojazd pojazd;
     SamochodOsobowy so;
+    Zaglowka zaglowka;
 
     public void uruchomProgram() {
         //Uruchamia metody: tworzącą i testujacą giełdę
@@ -17,6 +18,7 @@ public class Kontroler {
         tworzGielde();
         wczytajDane();
         testujGielde();
+
     }
 
     private void wczytajDane() {
@@ -54,6 +56,18 @@ public class Kontroler {
         // so.setDataPrzegladu(LocalDate.parse("2.1.2"));
 
         System.out.println(so);
+
+        //testujemy zaglowka
+        zaglowka = new Zaglowka("Z", "Carina", 1999, 45_000f, 1,1);
+        zaglowka.setDlugosc(750);
+        zaglowka.setPowZagli(12);
+        zaglowka.setLiczbaMiejsc(5);
+        // so.setDataPrzegladu(LocalDate.parse("2.1.2"));
+
+        System.out.println(zaglowka);
+
+
+
 
     }
 }
