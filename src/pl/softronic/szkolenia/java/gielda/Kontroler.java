@@ -9,7 +9,7 @@ public class Kontroler {
     Gielda gielda;
     UrzadSkarbowy us;
     Pojazd pojazd;
-    SamochodOsobowy so;
+    SamochodOsobowy so, so2, so3;
     Zaglowka zaglowka;
 
     public void uruchomProgram() {
@@ -50,6 +50,8 @@ public class Kontroler {
 
         //testujemy samochod osobowy
         so = new SamochodOsobowy("O", "Mustang", 1969,300_000f,1,  1);
+        so2 = new SamochodOsobowy("O", "Mustang", 1969,300_000f,1,  1);
+        so3 = new SamochodOsobowy("O", "Mustang", 1969,300_000f,1,  1);
         so.setLiczbaMiejsc(5);
         so.setNadwozie("Sedan");
         so.setPojemnosc(6900);
@@ -67,6 +69,18 @@ public class Kontroler {
         System.out.println(zaglowka);
 
 
+    // symulacj arzyjęcia auta
+        // udajemy ze mamy sprzedawce i sprzedajacego
+
+        int idSprzedawcy = 2;
+        int idWlasciciela  = 2;
+        gielda.przyjmijSamochodOsobowy(idSprzedawcy, idWlasciciela, so);
+        gielda.przyjmijSamochodOsobowy(idSprzedawcy, idWlasciciela, so2);
+        gielda.przyjmijSamochodOsobowy(idSprzedawcy, idWlasciciela, so3);
+        gielda.wyswietlSamochodyOsobowe();
+
+        //jakie samochody są na giełdzie
+     //   System.out.println(wyswietlSamochodyOsobowe);
 
 
     }
