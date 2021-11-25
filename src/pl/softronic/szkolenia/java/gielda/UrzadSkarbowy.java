@@ -1,16 +1,11 @@
 package pl.softronic.szkolenia.java.gielda;
 
-import java.util.SplittableRandom;
-
-public class Gielda {
+public class UrzadSkarbowy {
 
     private String nazwa = "";
     protected String adres = "";
 
-    public static void main(String[] args) {
-        Kontroler kontroler = new Kontroler();
-        kontroler.uruchomProgram();
-    }
+// kopijemy Gielda w Project i wklejamy jako UrzadSkabowy
 // krok trzeci
     public String getNazwa() {
         return nazwa;
@@ -30,7 +25,7 @@ public class Gielda {
 
     @Override
     public String toString() {
-        return "Gielda{" +
+        return "Urząd Skarbowy{" +
                 "nazwa='" + nazwa + '\'' +
                 ", adres='" + adres + '\'' +
                 '}';
