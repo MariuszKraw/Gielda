@@ -50,7 +50,7 @@ public class Kontroler {
         so = new SamochodOsobowy("O", "Mustang", 1969,300_000f,1,  1);
         so.setLiczbaMiejsc(5);
         so.setNadwozie("Sedan");
-        so.setPojemnosc(5900);
+        so.setPojemnosc(6900);
         // so.setDataPrzegladu(LocalDate.parse("2.1.2"));
 
         System.out.println(so);
