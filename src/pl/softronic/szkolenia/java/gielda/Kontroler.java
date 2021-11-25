@@ -1,6 +1,9 @@
 package pl.softronic.szkolenia.java.gielda;
 
 public class Kontroler {
+// krok 2
+    Gielda gielda;
+
     public void uruchomProgram() {
         //Uruchamia metody: tworzącą i testujacą giełdę
 
@@ -15,8 +18,10 @@ public class Kontroler {
 
     // mariusz 
     public void tworzGielde() {
-
         System.out.println("Tworzę giełdę");
+
+        gielda = new Gielda();
+        gielda.setNazwa("Gielda MK");
     }
 
     public void testujGielde(){
