@@ -13,6 +13,7 @@ public class Kontroler {
         
     }
 
+    // mariusz 
     public void tworzGielde() {
 
         System.out.println("Tworzę giełdę");
